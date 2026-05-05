@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed's Gym Tracker</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="bg-slate-950 text-slate-100 font-sans selection:bg-blue-500 selection:text-white"
+  >
+    <!-- Main Wrapper -->
+    <main
+      class="min-h-screen flex flex-col items-center justify-center px-6 py-12"
+    >
+      <!-- Header Section -->
+      <header class="text-center mb-16 animate-fade-in">
+        <h1
+          class="text-4xl md:text-6xl font-black tracking-tight mb-4 bg-linear-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent"
+        >
+          Hey Ahmed,
+        </h1>
+        <p class="text-slate-400 text-lg md:text-xl font-medium">
+          What do we have today?
+        </p>
+      </header>
+      <!-- Navigation Grid: Mobile 1st (1 column) -> Desktop (2 columns) -->
+      <nav
+        class="grid grid-cols-1 gap-4 w-full max-w-md md:max-w-2xl md:grid-cols-2"
+      >
+        <!-- Day 1 Button -->
+        <a
+          href="01-upper-a-shoulder-back.html"
+          class="group relative overflow-hidden flex flex-col items-start p-6 bg-slate-900 border border-slate-800 rounded-3xl transition-all duration-300 hover:border-blue-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] active:scale-95"
+        >
+          <span
+            class="text-slate-500 text-sm font-bold mb-1 group-hover:text-blue-400"
+            >SESSION 01</span
+          >
+          <span class="text-2xl font-bold">Shoulders & Back</span>
+          <div
+            class="absolute right-4 bottom-4 opacity-10 group-hover:opacity-100 transition-opacity"
+          >
+            <svg
+              class="w-8 h-8 text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              ></path>
+            </svg>
+          </div>
+        </a>
+
+        <!-- Day 2 Button -->
+        <a
+          href="02-lower-a-glutes-posterior-chain.html"
+          class="group relative overflow-hidden flex flex-col items-start p-6 bg-slate-900 border border-slate-800 rounded-3xl transition-all duration-300 hover:border-emerald-500 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] active:scale-95"
+        >
+          <span
+            class="text-slate-500 text-sm font-bold mb-1 group-hover:text-emerald-400"
+            >SESSION 02</span
+          >
+          <span class="text-2xl font-bold">Posterior Chain</span>
+          <div
+            class="absolute right-4 bottom-4 opacity-10 group-hover:opacity-100 transition-opacity"
+          >
+            <svg
+              class="w-8 h-8 text-emerald-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              ></path>
+            </svg>
+          </div>
+        </a>
+
+        <!-- Day 3 Button -->
+        <a
+          href="03-upper-b-chest-arms.html"
+          class="group relative overflow-hidden flex flex-col items-start p-6 bg-slate-900 border border-slate-800 rounded-3xl transition-all duration-300 hover:border-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] active:scale-95"
+        >
+          <span
+            class="text-slate-500 text-sm font-bold mb-1 group-hover:text-purple-400"
+            >SESSION 03</span
+          >
+          <span class="text-2xl font-bold">Chest & Arms</span>
+          <div
+            class="absolute right-4 bottom-4 opacity-10 group-hover:opacity-100 transition-opacity"
+          >
+            <svg
+              class="w-8 h-8 text-purple-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              ></path>
+            </svg>
+          </div>
+        </a>
+
+        <!-- Day 4 Button -->
+        <a
+          href="04-lower-b-quads-core.html"
+          class="group relative overflow-hidden flex flex-col items-start p-6 bg-slate-900 border border-slate-800 rounded-3xl transition-all duration-300 hover:border-orange-500 hover:shadow-[0_0_20px_rgba(249,115,22,0.2)] active:scale-95"
+        >
+          <span
+            class="text-slate-500 text-sm font-bold mb-1 group-hover:text-orange-400"
+            >SESSION 04</span
+          >
+          <span class="text-2xl font-bold">Quads & Core</span>
+          <div
+            class="absolute right-4 bottom-4 opacity-10 group-hover:opacity-100 transition-opacity"
+          >
+            <svg
+              class="w-8 h-8 text-orange-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              ></path>
+            </svg>
+          </div>
+        </a>
+      </nav>
+      <!-- Finalized Personal Checklist -->
+      <section
+        class="w-full max-w-md md:max-w-2xl mx-auto mt-12 p-8 bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl"
+      >
+        <div class="flex items-center justify-between mb-6">
+          <h3
+            class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em]"
+          >
+            Pre-Gym Protocol
+          </h3>
+          <span
+            class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-1 rounded-full border border-blue-500/20 font-bold uppercase"
+            >Don't Forget</span
+          >
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Wallet -->
+          <div class="relative">
+            <input type="checkbox" id="wallet" class="peer hidden" />
+            <label
+              for="wallet"
+              class="flex items-center p-4 bg-slate-950/50 border border-slate-800 rounded-2xl cursor-pointer select-none transition-all hover:border-blue-500/50 peer-checked:opacity-40"
+            >
+              <div
+                class="w-6 h-6 border-2 border-slate-700 rounded-lg mr-4 flex items-center justify-center peer-checked:bg-emerald-500 peer-checked:border-emerald-500 transition-all"
+              >
+                <svg
+                  class="w-4 h-4 text-white hidden peer-checked:block"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-bold text-slate-200 peer-checked:line-through"
+                  >Wallet</span
+                >
+                <span class="text-[10px] text-slate-500 uppercase font-bold"
+                  >ID & Cash</span
+                >
+              </div>
+            </label>
+          </div>
+
+          <!-- Socks -->
+          <div class="relative">
+            <input type="checkbox" id="socks" class="peer hidden" />
+            <label
+              for="socks"
+              class="flex items-center p-4 bg-slate-950/50 border border-slate-800 rounded-2xl cursor-pointer select-none transition-all hover:border-blue-500/50 peer-checked:opacity-40"
+            >
+              <div
+                class="w-6 h-6 border-2 border-slate-700 rounded-lg mr-4 flex items-center justify-center peer-checked:bg-emerald-500 peer-checked:border-emerald-500 transition-all"
+              >
+                <svg
+                  class="w-4 h-4 text-white hidden peer-checked:block"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-bold text-slate-200 peer-checked:line-through"
+                  >Socks</span
+                >
+                <span class="text-[10px] text-slate-500 uppercase font-bold"
+                  >Wear or Pack</span
+                >
+              </div>
+            </label>
+          </div>
+
+          <!-- Headphones -->
+          <div class="relative">
+            <input type="checkbox" id="audio" class="peer hidden" />
+            <label
+              for="audio"
+              class="flex items-center p-4 bg-slate-950/50 border border-slate-800 rounded-2xl cursor-pointer select-none transition-all hover:border-blue-500/50 peer-checked:opacity-40"
+            >
+              <div
+                class="w-6 h-6 border-2 border-slate-700 rounded-lg mr-4 flex items-center justify-center peer-checked:bg-emerald-500 peer-checked:border-emerald-500 transition-all"
+              >
+                <svg
+                  class="w-4 h-4 text-white hidden peer-checked:block"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-bold text-slate-200 peer-checked:line-through"
+                  >Headphones</span
+                >
+                <span class="text-[10px] text-slate-500 uppercase font-bold"
+                  >Charged?</span
+                >
+              </div>
+            </label>
+          </div>
+
+          <!-- Water (Bonus) -->
+          <div class="relative">
+            <input type="checkbox" id="h2o" class="peer hidden" />
+            <label
+              for="h2o"
+              class="flex items-center p-4 bg-slate-950/50 border border-slate-800 rounded-2xl cursor-pointer select-none transition-all hover:border-blue-500/50 peer-checked:opacity-40"
+            >
+              <div
+                class="w-6 h-6 border-2 border-slate-700 rounded-lg mr-4 flex items-center justify-center peer-checked:bg-emerald-500 peer-checked:border-emerald-500 transition-all"
+              >
+                <svg
+                  class="w-4 h-4 text-white hidden peer-checked:block"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-bold text-slate-200 peer-checked:line-through"
+                  >Water</span
+                >
+                <span class="text-[10px] text-slate-500 uppercase font-bold"
+                  >Hydrate</span
+                >
+              </div>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Disclaimer Section -->
+      <footer
+        class="w-full max-w-md md:max-w-2xl mx-auto mt-16 mb-8 px-4 text-center"
+      >
+        <div class="pt-8 border-t border-slate-900">
+          <p
+            class="text-[10px] text-slate-600 leading-relaxed uppercase tracking-widest font-medium"
+          >
+            Personal Project Disclaimer
+          </p>
+          <p
+            class="mt-3 text-xs text-slate-500 leading-relaxed max-w-lg mx-auto"
+          >
+            This website is a
+            <span class="text-slate-400">personal project</span> created for
+            individual use only. I do not own the images or photography used in
+            this application; all rights belong to their respective original
+            owners. No copyright infringement is intended.
+          </p>
+
+          <div class="mt-6 flex justify-center space-x-4">
+            <span class="h-1 w-1 rounded-full bg-slate-800"></span>
+            <span class="h-1 w-1 rounded-full bg-slate-800"></span>
+            <span class="h-1 w-1 rounded-full bg-slate-800"></span>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
